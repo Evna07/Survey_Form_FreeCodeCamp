@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form Project</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <h1 id='title'>Survey Certification Project</h1>
+    <p id='description'>This is my survey for Responsive Web  Design Project</p>
+    <form id='survey-form'>
+      <fieldset>
+        <label for='name' id="name-label">Enter your name: </label><input id='name' type='text' required placeholder='Your name'></input>
+        <label for='email' id="email-label">Enter your email: </label><input id='email' type='email' required placeholder='Your email'></input>
+        <label for='number' id="number-label">Enter your number: </label><input id='number' type='number' pattern='[0-9]{8,}' placeholder='Your number' min='8' max='8'></input>
+      </fieldset>
+      <fieldset>
+        <label>What time of day do you prefer? 
+          <select id='dropdown'>
+            <option>Select one</option>
+            <option>Day</option>
+            <option>Night</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label>Who is the king of animals?</label>
+          <input type='radio' name='animal' value='Cat'>Cat</input>
+          <input type='radio' name='animal' value='Capibara'> Capibara</input>
+      </fieldset>
+      <fieldset>
+        <label>And your favourite genre? (check how many you want)</label>
+          <input type='checkbox' value="horror">Horror</input>
+          <input type='checkbox' value="fantasy">Fantasy</input>
+          <input type='checkbox' value="sci-fi">Sci-Fi</input>
+      </fieldset>
+      <fieldset>
+        <label>Penny for your thoughts</label>
+        <textarea placeholder='I like watching snow...'></textarea>
+      </fieldset>
+      <button id='submit'>Submit</button>
+    </form>
+    <div id='spacer'></div>
+  </body>
